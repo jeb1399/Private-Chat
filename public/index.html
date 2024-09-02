@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth">
+        <h1>Chat Application</h1>
+        <form id="register-form">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <button id="logout-button" style="display:none;">Logout</button>
+    </div>
+    <div id="chat" style="display:none;">
+        <h2>Chat Room</h2>
+        <p>Your ID: <span id="user-id"></span></p>
+        <div id="contacts">
+            <h3>Contacts</h3>
+            <ul id="contact-list"></ul>
+            <input type="text" id="new-contact-id" placeholder="Contact's ID">
+            <input type="text" id="new-contact-name" placeholder="Contact's Name">
+            <button id="add-contact">Add Contact</button>
+        </div>
+        <div id="messages"></div>
+        <input type="text" id="message" placeholder="Type a message">
+        <button id="send-message">Send</button>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
